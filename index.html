@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-   
+<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
 
 <link rel="apple-touch-icon" sizes="180x180" href="http://livesyllabus.com/static/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://livesyllabus.com/static/icons/favicon-32x32.png">
@@ -46,19 +46,28 @@
             <link href="./index_files/style.3167e7c9d6aa.css" rel="stylesheet">
             <link href="./index_files/responsive.47ebf6b9cd47.css" rel="stylesheet">
         
-
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         
         <link href="./index_files/project.21a122780398.css" rel="stylesheet">
 
-    
+   
+
+
 
 
 <link href="./extracss.css" rel="stylesheet">
     
 <style>
+    .navbar .navbar-brand {
+        font-family: 'Old Standard TT', serif;
+    }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .header-1-img {
+        margin-top: 250px;
+    }
+
     /*
     Adding some stuff for the template to make a bigger logo that gets smaller effect
     */
@@ -129,8 +138,8 @@
     <div class="container">
         
     <a class="navbar-brand">
-        <img src="./index_files/file_logo_medium.f3a436c7620b.png">
-        <span>File</span>Peek
+        <img src="./assets/logo_large.png">
+        <span>Live</span>Syllabus
     </a>
 
 
@@ -143,7 +152,13 @@
                 
             </ul>
 
-            
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-target="#signupModal" data-toggle="modal" data-target="#signupModal" href="#">Request a demo</a>
+                </li>
+            </ul>
+           
+            <!--
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         
@@ -154,6 +169,7 @@
                         <a id="log-in-link" class="nav-link" href="http://filepeek.com/accounts/login/">Sign In</a>
                     </li>
                 </ul>
+            -->
             
 
         </div>
@@ -168,15 +184,16 @@
     <div class="row">
       <div class="col-md-6">
         <div class="header-1-text">
-          <h1>Previews for your files</h1>
-          <p>Embed, preview, and convert any file type in your next web
-          application or blog post.</p>
-          <p><a class="btn btn-lg btn-green " href="http://filepeek.com/accounts/signup/">Get your free account</a></p>
+          <h1>Live code your class</h1>
+          <p>A modern, crisp, and easy class management software built for
+          training, online classes, seminars, career coaching, workshops, and
+          coding bootcamps.</p>
+          <p><a class="btn btn-lg btn-green " data-target="#signupModal" data-toggle="modal" data-target="#signupModal" href="#">Request a demo</a></p>
         </div>
       </div>
       <div class="col-md-6">
         <div class="header-1-img">
-          <img src="./index_files/frontpage.5afa03f8e3bc.png" class="img-fluid " alt="Conversion diagram">
+          <img src="./assets/laptop_screenshot_2.png" class="img-fluid " alt="Site on laptop">
         </div>
       </div>
     </div>
@@ -290,20 +307,21 @@
             <h5>Contact Info</h5>
             <p>1721 Broadway #201, Oakland, CA 94612 </p>
             <p>(415) 504 2954 </p>
-            <p>info@omniconv.com</p>
+            <!--<p>info@omniconv.com</p>-->
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-12 col-xs-12">
-          <div class="footer-item">
-            <h5>Navigation</h5>
-            <ul>
-                
-                    <li><a href="http://filepeek.com/">Home</a></li>
-                    <li><a href="http://filepeek.com/dashboard/">Dashboard</a></li>
-                    <li><a href="http://filepeek.com/accounts/login/">Log In</a></li>
-                    <li><a href="http://filepeek.com/accounts/signup/">Sign Up</a></li>
-                
-            </ul>
+            <!--
+                <h5>Navigation</h5>
+                <ul>
+                    
+                        <li><a href="http://filepeek.com/">Home</a></li>
+                        <li><a href="http://filepeek.com/dashboard/">Dashboard</a></li>
+                        <li><a href="http://filepeek.com/accounts/login/">Log In</a></li>
+                        <li><a href="http://filepeek.com/accounts/signup/">Sign Up</a></li>
+                    
+                </ul>
+            -->
           </div>
         </div>
         
@@ -314,10 +332,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="footer-bottom-cont">
-            <div class="footer-copyright text-center py-3">© 2019 <abbr title="A Kickstart Coding LLC Project">LiveSyllabus</abbr>, All Rights
-            Reserved - Marketing includes CSS © 2019 by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
-          </div>
+          <div class="footer-item">
+            <p>© 2019 <abbr title="A Kickstart Coding LLC Project">LiveSyllabus</abbr>, All Rights
+            Reserved - Marketing includes CSS © 2019 by <a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
         </div>
       </div>
     </div>
