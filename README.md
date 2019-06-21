@@ -1,3 +1,8 @@
 # livesyllabus-landing
 
-Static landing site for Live Syllabus
+Go to http://livesyllabus.com/ if you want to learn more.
+
+Static landing page for Live Syllabus
+
+Internal use, mostly -- nothing much to see here.
+
